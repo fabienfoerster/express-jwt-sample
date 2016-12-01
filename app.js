@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(expressJWT({secret: "sample app"}).unless({path:['/','/auth']}))
 
 app.get('/', function(req,res) {
     res.status(200).send('Hello World');
@@ -19,7 +20,8 @@ app.get('/secure', function(req,res) {
 
 
 app.get('/auth', function(req,res) {
-    res.status(200).send('Authentification endpoint');
+    var token = jwt.sign({username: 'binou'}, "sample app")
+    res.status(200).json(token);
     return;
 });
 
