@@ -1,0 +1,25 @@
+{
+  "name": "express-jwt-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabienfoerster/express-jwt-sample.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabienfoerster/express-jwt-sample/issues"
+  },
+  "homepage": "https://github.com/fabienfoerster/express-jwt-sample#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.1.9"
+  }
+}
