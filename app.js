@@ -30,3 +30,5 @@ var port = process.env.PORT || 8000
 app.listen(port)
 
 console.log("The magic is happening on port " + port)
+
+module.exports = app;
